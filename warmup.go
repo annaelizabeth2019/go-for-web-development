@@ -22,7 +22,6 @@ func main() {
 		"Anna",
 		"Peterson",
 	}
-	fmt.Println(p1)
 
 	sa1 := secretAgent{
 		person{
@@ -32,10 +31,8 @@ func main() {
 		true,
 	}
 
-	fmt.Println(sa1)
 	saySomething(p1)
 	saySomething(sa1)
-
 }
 
 func saySomething(h human) {
