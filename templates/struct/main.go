@@ -23,6 +23,7 @@ func main() {
 		Name:  "Buddha",
 		Motto: "The belief in no beliefs",
 	}
+
 	err := tpl.Execute(os.Stdout, buddha)
 	if err != nil {
 		fmt.Println(err)
