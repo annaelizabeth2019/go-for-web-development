@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>{{.Person.Name}}</h1>
+<h2>{{.Person.Age}} 00{{.Person.SomeProcessing}} - DOUBLE: {{.Person.AgeDbl}} - {{.Person.Age | .Person.TakesArg }} - {{.Person.AgeDbl | .Person.TakesArg}}</h2>
+
+{{.Year.Fall.Term}}<br>
+{{range .Year.Fall.Courses}}
+{{.Number}} - {{.Name}} - {{.Units}}<br>
+{{end}}
+
+
+{{.Year.Spring.Term}}<br>
+{{range .Year.Spring.Courses}}
+{{.Number}} - {{.Name}} - {{.Units}}<br>
+{{end}}
+
+</body>
+</html>
