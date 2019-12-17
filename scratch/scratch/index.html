@@ -1,0 +1,39 @@
+{% autoescape true %}
+
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <p>This is all the passed variables: {{ . }}</p>
+    <table>
+      <tr>
+        <td>City</td>
+        <td>Population</td>
+        <td>State</td>
+        <td>Country</td>
+        <td>Capital</td>
+      </tr>
+
+      {{ range .cities }}
+      <tr>
+        <td>testing</td>
+        <td>testing</td>
+        <td>testing</td>
+        <td>testing</td>
+        <td>testing</td>
+      </tr>
+      <tr>
+        <td>{{.Name}}</td>
+        <td>{{ .Population}}</td>
+        <td>{{ .State}}</td>
+        <td>{{.Country}}</td>
+        <td>{{.Capital}}</td>
+      </tr>
+      {{ end }}
+    </table>
+
+    {{ $cities := . }}
+  </body>
+</html>
+{% endautoescape %}
